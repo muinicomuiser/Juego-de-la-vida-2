@@ -6,10 +6,53 @@
 body {
     background-color: black;
     text-align: center;  
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white
 }
 canvas {
     background-color: black;
     margin: 10px;
     border: 2px skyblue solid;
+}
+
+li {
+    float:center;
+    display:inline;
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.boton {
+    font-size: 1rem;
+    width: 8rem;
+    color: inherit;
+    padding: 0.5rem;
+    background-color: black;
+    border: skyblue solid 1px;
+}
+.boton:hover {
+    color: skyblue;
+}
+.velTexto {
+    display:block;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+}
+#velocidad {
+    appearance: none;
+    width: 720px;
+    outline: none;
+    background-color: black;
+    border: skyblue solid 1px;
+}
+
+.bordeText {
+    font-family: inherit;
+    font-size: 1rem;
+}
+#borde {
+    margin: 0.5rem;
 }

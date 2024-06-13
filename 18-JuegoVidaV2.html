@@ -11,26 +11,26 @@
 
     </header>
     <main>
-        <section>
-            <canvas id="canvas"></canvas>
+        <canvas id="canvas"></canvas>
+        <section>            
             <ul id="interfaz">
                 <li>
-                    <label for="velocidad">Velocidad de reproducción</label>
-                    <input type="range" id="velocidad" value="20" min="1" max="60">
+                    <input type="button" id="Limpiar" class="boton" value="Limpiar">
                 </li>
                 <li>
-                    <button id="turno">Turno</button>
+                    <input type="button" id="play" class="boton" value="Reproducir">
                 </li>
                 <li>
-                    <input type="button" id="play" value="Reproducir">
+                    <button id="turno" class="boton">Turno siguiente</button>
                 </li>
-                <li>
-                    <label for="borde">Borde</label>
-                    <input type="checkbox" id="borde">
-                </li>
-            </ul>
-            
+            </ul>    
+            <label for="borde" class="bordeText">Borde </label>           
+            <input type="checkbox" id="borde">
+    
+            <label for="velocidad" class="velTexto">Velocidad de reproducción</label>
+            <input type="range" id="velocidad" step="1" value="10" min="1" max="60">        
         </section>
+
     </main>
 </body>
 <script src="script/18-main.js"></script>
