@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la Vida de Conway - V2</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <canvas id="canvas"></canvas>
+            <ul id="interfaz">
+                <li>
+                    <label for="velocidad">Velocidad de reproducción</label>
+                    <input type="range" id="velocidad" value="20" min="1" max="60">
+                </li>
+                <li>
+                    <button id="turno">Turno</button>
+                </li>
+                <li>
+                    <input type="button" id="play" value="Reproducir">
+                </li>
+                <li>
+                    <label for="borde">Borde</label>
+                    <input type="checkbox" id="borde">
+                </li>
+            </ul>
+            
+        </section>
+    </main>
+</body>
+<script src="script/18-main.js"></script>
+<script src="script/18-juego.js"></script>
+<script src="script/18-celula.js"></script>
+</html>

@@ -1,0 +1,12 @@
+Una versión nueva de John Horton Conway
+Juego sin jugadores
+Consta de una grilla con casillas que pueden ser ocupadas por una célula.
+La aparición o muerte de una célula en una casilla depende de la cantidad de células que haya alrededor.
+En cada turno nuevo se revisa la cantidad de vecinos de cada casilla para determinar su estado siguiente.
+Las reglas que definen si una célula nace, se mantiene viva o muere son las siguientes:
+
+Una célula muerta nace si tiene exactamente tres células vecinas vivas (es decir, al turno siguiente estará viva).
+Una célula puede morir por dos causas:
+    Sobrepoblación: si tiene más de tres vecinos alrededor.
+    Aislamiento: si tiene solo un vecino alrededor o ninguno.
+Una célula se mantiene viva si tiene dos o tres vecinos a su alrededor.
