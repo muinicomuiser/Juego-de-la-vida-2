@@ -129,6 +129,15 @@ class Juego{
             }
         }
     }
+    resetearCelulas(){
+        for(let col = 0; col < this.celdasPorLado; col++){
+            for(let fil=0; fil < this.celdasPorLado; fil++){
+                this.celulasActuales[col][fil].alive = false;
+                this.celulasSiguientes[col][fil].alive = false;
+                this.celulasActuales[col][fil].vecinos = 0;
+            }
+        }
+    }
     actualizarBorde(){
         for(let col = 0; col < this.celdasPorLado; col++){
             for(let fil=0; fil < this.celdasPorLado; fil++){

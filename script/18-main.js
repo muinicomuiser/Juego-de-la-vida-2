@@ -57,6 +57,14 @@ btnTurno.addEventListener("click", () => {
     nuevoJuego.turnoNuevo(CONTEXT)
 });
 
+const btnLimpiar = document.getElementById("Limpiar");
+btnLimpiar.addEventListener("click", () => {
+    nuevoJuego.play = false;
+    btnPlay.value = "Reproducir";
+    nuevoJuego.resetearCelulas();
+    nuevoJuego.pintarJuego(CONTEXT)
+});
+
 const fpsRange = document.getElementById("velocidad");
 
 const btnPlay = document.getElementById("play");
@@ -65,10 +73,10 @@ btnPlay.addEventListener("click", ()=>{
     nuevoJuego.fps = fpsRange.value;
     if(nuevoJuego.play){
         btnPlay.value = "Pausar";
-        }
-        else{
-            btnPlay.value = "Reproducir"
-            }    
+    }
+    else{
+        btnPlay.value = "Reproducir"
+    }    
     requestAnimationFrame(play);
 })
 
@@ -76,6 +84,9 @@ function play(){
     if(nuevoJuego.play == true){
         console.log(fpsRange.value);
         nuevoJuego.fps = fpsRange.value;
+        if(fpsRange.value == 0){
+            nuevoJuego.fps = 1;
+        }
         if(nuevoJuego.contador % (61-nuevoJuego.fps) == 0){        
             nuevoJuego.turnoNuevo(nuevoJuego.context);
         }
