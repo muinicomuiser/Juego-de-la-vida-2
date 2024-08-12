@@ -14,7 +14,7 @@
 //Constantes
 const RETICULA = {
     celdasPorLado: 60,
-    anchoCelda: 12,
+    anchoCelda: 10,
     grosorBorde: 0,
     colorBorde: "black",
     colorMuerta: "black",
