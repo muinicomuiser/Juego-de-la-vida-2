@@ -13,7 +13,7 @@
  */
 //Constantes
 const OPCIONES = {
-    celdasPorLado: 60,
+    celdasPorLado: 70,
     anchoCelda: 10,
     grosorBorde: 0,
     colorBorde: "black",
