@@ -12,9 +12,9 @@
  *  También 
  */
 //Constantes
-const RETICULA = {
-    celdasPorLado: 60,
-    anchoCelda: 12,
+const OPCIONES = {
+    celdasPorLado: 50,
+    anchoCelda: 10,
     grosorBorde: 0,
     colorBorde: "black",
     colorMuerta: "black",
@@ -23,23 +23,22 @@ const RETICULA = {
 }
 const CANVAS = document.getElementById("canvas");
 const CONTEXT = CANVAS.getContext("2d");
-CANVAS.width = ladoCanvas(RETICULA);
-CANVAS.height = ladoCanvas(RETICULA);
+CANVAS.width = OPCIONES.celdasPorLado * OPCIONES.anchoCelda;
+CANVAS.height = OPCIONES.celdasPorLado * OPCIONES.anchoCelda;
 let nuevoJuego;
 
 // Inicio del programa
 window.addEventListener("load", () => {
-    nuevoJuego = new Juego(CANVAS, RETICULA);
+    nuevoJuego = new Juego(CANVAS, OPCIONES);
     nuevoJuego.pintarJuego(CONTEXT);    
 })
 window.addEventListener("resize", () =>{
     nuevoJuego.offsetLeft = CANVAS.offsetLeft;
     nuevoJuego.offsetTop = CANVAS.offsetTop;
 })
-function ladoCanvas(reticula){
-    return reticula.celdasPorLado * reticula.anchoCelda;
-}
+
 const checkBorde = document.getElementById("borde");
+
 checkBorde.addEventListener("change", () =>{
     if(checkBorde.checked){
         nuevoJuego.grosorBorde = 1;

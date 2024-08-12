@@ -1,16 +1,16 @@
 class Juego{
-    constructor(canvas, reticula){
+    constructor(canvas, opciones){
         this.canvas = canvas;        
         this.width = this.canvas.width;
         this.height = this.canvas.height;
         this.offsetLeft = this.canvas.offsetLeft;
         this.offsetTop = this.canvas.offsetTop;
-        this.anchoCelda = reticula.anchoCelda;
-        this.celdasPorLado = reticula.celdasPorLado;
-        this.grosorBorde = reticula.grosorBorde;
-        this.colorBorde = reticula.colorBorde;
-        this.colorMuerta = reticula.colorMuerta;
-        this.colorViva = reticula.colorViva;
+        this.anchoCelda = opciones.anchoCelda;
+        this.celdasPorLado = opciones.celdasPorLado;
+        this.grosorBorde = opciones.grosorBorde;
+        this.colorBorde = opciones.colorBorde;
+        this.colorMuerta = opciones.colorMuerta;
+        this.colorViva = opciones.colorViva;
         this.context;
         this.contador = 0;
         this.fps = 1;

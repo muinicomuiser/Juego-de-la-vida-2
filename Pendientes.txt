@@ -1,0 +1,8 @@
+Ideas por incorporar:
+    Un control en la interfaz para cambiar el tamaño del juego y de las casillas.
+    Una clase completa en un módulo para la interfaz:
+        el control del tiempo debería ser parte de la interfaz, no del juego
+        el reseteo también es externo al juego, así como el estilo y el tamaño
+    Una sección con patrones de figuras para agregar al juego, que al seleccionarla y mover el mouse sobre el canvas, aparezca una
+    previsualización de la figura acoplada al puntero, y que al hacer click se dibuje en el canvas.
+    Textos!! Y un archivo léeme. Descripción de la idea del juego. Un poco de historia y de explicación de la construcción del código.

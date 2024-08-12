@@ -1,4 +1,4 @@
-Una codificación nueva del "Game of Life" John Horton Conway
+Una codificación nueva del "Game of Life" de John Horton Conway
 Juego sin jugadores
 Consta de una grilla con casillas que pueden ser ocupadas por una célula.
 La aparición o muerte de una célula en una casilla depende de la cantidad de células que haya alrededor.
