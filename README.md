@@ -1,0 +1,25 @@
+<p align="center">
+  <!-- <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a> -->
+  <img src="juego.png"  width="450" alt="JUEGO DE LA VIDA"/>
+</p>
+
+
+## JUEGO DE LA VIDA
+
+Una versión del "Game of Life" de John Horton Conway.     
+  
+
+## Descripción
+
+Juego sin jugadores.      
+Consta de una grilla con casillas que pueden ser ocupadas por una célula.     
+La aparición o muerte de una célula en una casilla depende de la cantidad de células que haya alrededor.      
+En cada turno nuevo se revisa la cantidad de vecinos de cada casilla para determinar su estado siguiente.     
+Las reglas que definen si una célula nace, se mantiene viva o muere son las siguientes:     
+
+Una célula nace si tiene exactamente tres células vecinas vivas (es decir, al turno siguiente estará viva).      
+Una célula puede morir por dos causas:      
+  -    Sobrepoblación: si tiene más de tres vecinos alrededor.     
+  -    Aislamiento: si tiene solo un vecino alrededor o ninguno.  
+    
+Una célula se mantiene viva si tiene dos o tres vecinos a su alrededor.   
