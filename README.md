@@ -6,7 +6,8 @@
 
 ## JUEGO DE LA VIDA
 
-Una versión del "Game of Life" de John Horton Conway.     
+Una versión del "Game of Life" de John Horton Conway.   
+Es mi segundo ensayo en replicar este juego.  
   
 
 ## Descripción
